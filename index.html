@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TORUL Tax Advisors</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #1f3a5f;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background: #162b45;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #1f3a5f;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .cta {
+      background: #1f3a5f;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    button {
+      background: #ffb400;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #e0a000;
+    }
+
+    footer {
+      background: #162b45;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>TORUL Tax Advisors</h1>
+  <p>Professional Accounting & Tax Services</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      TORUL Tax Advisors is led by a highly experienced professional with over 25 years in accounting and finance.
+      A Fellow of the Association of Chartered Certified Accountants (FCCA) and holder of an LLB,
+      we provide reliable, compliant, and practical financial solutions.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Bookkeeping</h3>
+        <p>Accurate and timely financial records to keep your business organized and informed.</p>
+      </div>
+
+      <div class="card">
+        <h3>Tax Services</h3>
+        <p>Personal and business tax preparation, planning, and compliance support.</p>
+      </div>
+
+      <div class="card">
+        <h3>Advisory</h3>
+        <p>Strategic financial advice to help you grow and manage your business effectively.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Need Professional Advice?</h2>
+    <p>Contact us today to schedule a consultation.</p>
+    <button onclick="showMessage()">Get in Touch</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong>(+1)-647-406-2501</p>
+    <p><strong>Email:</strong> torul.advisors@accountant.com</p>
+    <p><strong>Location:</strong> Missisauga,Ontario</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 TORUL Tax Advisors. All rights reserved.</p>
+</footer>
+
+<script>
+  function showMessage() {
+    alert("Please contact us via phone or email to book your consultation.");
+  }
+</script>
+
+</body>
+</html>
