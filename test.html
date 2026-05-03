@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✏️ CHANGE: Update title — format: "Article Title | TORUL Tax Advisors" -->
+  <title>Your Article Title Here | TORUL Tax Advisors</title>
+
+  <!-- ✏️ CHANGE: 150-160 char summary of the article (shows in Google results) -->
+  <meta name="description" content="Write a 1-2 sentence summary of this article here. Include keywords people would search for, like 'Ontario', 'CRA', 'small business', etc.">
+
+  <meta name="author" content="TORUL Tax Advisors">
+  <meta name="robots" content="index, follow">
+
+  <!-- ✏️ CHANGE: Update the slug (the part after the last /) to match your filename -->
+  <link rel="canonical" href="https://advisors.example.org/blog-your-slug-here.html">
+
+  <!-- ✏️ CHANGE: Update og:title and og:description (used when shared on LinkedIn etc.) -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://advisors.example.org/blog-your-slug-here.html">
+  <meta property="og:title" content="Your Article Title Here">
+  <meta property="og:description" content="Same as meta description above.">
+  <meta property="og:locale" content="en_CA">
+
+  <!-- ✏️ CHANGE: Update headline, datePublished, dateModified -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Your Article Title Here",
+    "description": "Same as meta description above.",
+    "author": {
+      "@type": "Organization",
+      "name": "TORUL Tax Advisors",
+      "url": "https://advisors.example.org/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "TORUL Tax Advisors",
+      "url": "https://advisors.example.org/"
+    },
+    "datePublished": "2026-01-01",
+    "dateModified":  "2026-01-01",
+    "inLanguage": "en-CA",
+    "mainEntityOfPage": "https://advisors.example.org/blog-your-slug-here.html"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #1f3a5f;
+      --navy-dark: #162b45;
+      --gold: #ffb400;
+      --bg: #f5f7fa;
+      --text: #333;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Source Sans 3', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    .site-nav {
+      background: var(--navy-dark);
+      padding: 12px 0;
+      text-align: center;
+    }
+    .site-nav a {
+      color: white; text-decoration: none;
+      font-size: 14px; font-weight: 600;
+      margin: 0 14px; letter-spacing: 0.04em;
+    }
+    .site-nav a:hover { text-decoration: underline; }
+    .site-nav .back { color: var(--gold); }
+
+    .article-hero {
+      background: var(--navy);
+      color: white;
+      padding: 48px 20px 40px;
+      text-align: center;
+    }
+    .article-hero .tag {
+      display: inline-block;
+      background: var(--gold);
+      color: #1a1a1a;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 3px;
+      margin-bottom: 16px;
+    }
+    .article-hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      margin: 0 auto 14px; max-width: 760px; line-height: 1.25;
+    }
+    .article-hero .meta { font-size: 0.88rem; opacity: 0.72; }
+
+    .article-wrap {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    /* ── CONTENT STYLES ── */
+    h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--navy); font-size: 1.45rem;
+      margin: 2.2rem 0 0.6rem;
+      border-left: 4px solid var(--gold);
+      padding-left: 12px;
+    }
+    h3 { color: var(--navy); font-size: 1.05rem; margin: 1.4rem 0 0.3rem; }
+    p { margin: 0 0 1rem; }
+    a { color: var(--navy); }
+    a:hover { color: var(--gold); }
+    ul, ol { padding-left: 1.4rem; margin: 0 0 1rem; }
+    li { margin-bottom: 6px; }
+
+    /* Callout / highlight box */
+    .callout {
+      background: #fffbeb;
+      border-left: 4px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    /* Tip box */
+    .tip {
+      background: #f0f4ff;
+      border: 1px solid #c7d3f5;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 1.5rem 0;
+    }
+
+    /* Simple table */
+    table {
+      width: 100%; border-collapse: collapse;
+      margin: 1.2rem 0 1.8rem; font-size: 0.95rem;
+      background: white; border-radius: 8px;
+      overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    }
+    thead { background: var(--navy); color: white; }
+    th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: #f0f4fa; }
+
+    /* CTA block */
+    .cta-block {
+      background: var(--navy); color: white;
+      border-radius: 10px; padding: 30px 28px;
+      text-align: center; margin: 3rem 0 0;
+    }
+    .cta-block h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: white; border: none; padding: 0;
+      font-size: 1.5rem; margin-top: 0;
+    }
+    .cta-block p { opacity: 0.88; margin-bottom: 0; }
+    .cta-block a.btn {
+      display: inline-block; margin-top: 16px;
+      background: var(--gold); color: #1a1a1a;
+      font-weight: 700; padding: 11px 26px;
+      border-radius: 5px; text-decoration: none;
+      transition: background 0.2s;
+    }
+    .cta-block a.btn:hover { background: #e0a000; }
+
+    footer {
+      background: var(--navy-dark); color: white;
+      text-align: center; padding: 16px; font-size: 13px;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="/" class="back">← Back to TORUL Tax Advisors</a>
+  <a href="/#services">Services</a>
+  <a href="/#contact">Contact</a>
+</nav>
+
+<header class="article-hero">
+  <!-- ✏️ CHANGE: category label e.g. "Tax Tips", "Bookkeeping", "Business Advice" -->
+  <span class="tag">Tax Tips</span>
+
+  <!-- ✏️ CHANGE: your article title -->
+  <h1>Your Article Title Goes Here</h1>
+
+  <!-- ✏️ CHANGE: month + year -->
+  <p class="meta">By TORUL Tax Advisors &nbsp;·&nbsp; Mississauga, Ontario &nbsp;·&nbsp; January 2026</p>
+</header>
+
+<article class="article-wrap">
+
+  <!-- ══════════════════════════════════════════════════════
+       START WRITING YOUR ARTICLE BELOW
+       
+       BUILDING BLOCKS AVAILABLE (copy/paste as needed):
+       - <p>          normal paragraph
+       - <h2>         section heading
+       - <h3>         sub-heading
+       - <ul><li>     bullet list
+       - <ol><li>     numbered list
+       - <div class="callout">   yellow highlight box
+       - <div class="tip">       blue tip box
+       - <table>                 table (see example below)
+  ══════════════════════════════════════════════════════ -->
+
+  <p>
+    Start with a short intro paragraph here — 2 to 3 sentences explaining what this article is about and who it helps.
+  </p>
+
+
+  <!-- SECTION HEADING -->
+  <h2>First Section Title</h2>
+
+  <p>
+    Write your content here. Keep paragraphs short — 3 to 5 sentences max. Mention "Ontario", "CRA", "Mississauga", or whatever keywords are relevant naturally in the text.
+  </p>
+
+  <p>
+    Another paragraph if needed.
+  </p>
+
+
+  <!-- CALLOUT BOX — good for important notes or warnings -->
+  <div class="callout">
+    <strong>Important:</strong> Write a key takeaway or warning here.
+  </div>
+
+
+  <!-- SECTION WITH A LIST -->
+  <h2>Second Section Title</h2>
+
+  <p>Here's a useful list for your readers:</p>
+
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ul>
+
+
+  <!-- TIP BOX -->
+  <div class="tip">
+    <p><strong>💡 Tip:</strong> Write a practical tip here — something actionable your reader can do right now.</p>
+  </div>
+
+
+  <!-- SECTION WITH A TABLE -->
+  <h2>Third Section Title (with a table)</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, cell 1</td>
+        <td>Row 1, cell 2</td>
+        <td>Row 1, cell 3</td>
+      </tr>
+      <tr>
+        <td>Row 2, cell 1</td>
+        <td>Row 2, cell 2</td>
+        <td>Row 2, cell 3</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!-- CLOSING PARAGRAPH -->
+  <p>
+    End with a short conclusion — summarize the main point and naturally lead into contacting you.
+  </p>
+
+
+  <!-- ══ CTA — leave this at the bottom of every article ══ -->
+  <div class="cta-block">
+    <!-- ✏️ CHANGE: customize the headline to match your article topic -->
+    <h2>Have Questions? We Can Help.</h2>
+    <p>TORUL Tax Advisors serves individuals and small businesses in Mississauga and the GTA — in English and French. FCCA-qualified, 25+ years experience.</p>
+    <a href="/#contact" class="btn">Book a Free Consultation</a>
+  </div>
+
+</article>
+
+<footer>
+  <p>© 2026 TORUL Tax Advisors. All rights reserved. |
+    <a href="mailto:torul.advisors@accountant.com">torul.advisors@accountant.com</a> |
+    Mississauga, Ontario
+  </p>
+</footer>
+
+</body>
+</html>
